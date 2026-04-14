@@ -1,54 +1,559 @@
-div.titre{
-    width:100%;
-    height: auto;
+/* Configuration générale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
     text-align: center;
-    font-size:100px;
-    background-repeat: no-repeat;
-    background-size: 100% 210px;    
+    border-bottom: 5px solid #3498db;
 }
-footer{
-    width:1500px;
-    height: 300px;
-    background-position: right;
+
+.titre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-div.texte{  
-    font-size:20px;
-    width:400px;
-        margin: auto;
-}
-h1{
+
+/* Titres */
+h1 {
     text-align: center;
-    font-size: 50px;
-}
-div.competences img{
-    width: 100px;
-    height: 100px;
+    color: #2c3e50;
+    margin-top: 50px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
     display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
 }
-div.stages{
-    display: flex;
-    justify-content: space-between; /* espace entre les deux blocs */
-    align-items: flex-start; /* aligne en haut */
-    width: 1000px;
-    margin: auto;
+
+h2 {
+    color: #34495e;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+}
+
+/* --- Global Styles for this Section --- */
+:root {
+  --blue-sio: #3498db;
+  --green-sio: #2ecc71;
+  --text-primary: #2c3e50;
+  --text-secondary: #5a6e7c;
+  --card-bg: #ffffff;
+  --body-bg: #f8f9fa;
+  --font-base: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--text-primary);
+  background-color: var(--body-bg);
+  line-height: 1.6;
+}
+
+.BTS-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.BTS-section h1 {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* --- Intro Banner --- */
+.introBTS-banner {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: 4px solid var(--blue-sio);
+}
+
+.introBTS-banner p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.introBTS-banner strong {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+/* --- Options Grid --- */
+.options-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Important for Mobile */
+}
+
+/* --- Option Cards --- */
+.option-card {
+  flex: 1;
+  min-width: 350px; /* Minimum width before breaking on mobile */
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Important for the top border radius */
+}
+
+.option-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+
+/* Colored Top Border based on Option */
+.option-card.option-sisr {
+  border-top: 6px solid var(--blue-sio);
+}
+
+.option-card.option-slam {
+  border-top: 6px solid var(--green-sio);
+}
+
+/* Card Header */
+.card-header {
+  padding: 25px 30px;
+  background-color: rgba(0,0,0,0.01);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+/* --- Badge --- */
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.option-sisr .badge {
+  background-color: var(--blue-sio);
+}
+
+.option-slam .badge {
+  background-color: var(--green-sio);
+}
+
+/* Card Body */
+.card-body {
+  padding: 30px;
+  flex-grow: 1; /* Pushes list of professions down evenly */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* --- Métiers Section --- */
+.metiers-section {
+  margin-top: auto; /* Aligns this block to the bottom of the card */
+  padding-top: 25px;
+  border-top: 1px dashed rgba(0,0,0,0.08);
+}
+
+.metiers-section strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+/* --- Metiers List --- */
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+/* Decorative Bullet (Dashed line) */
+.card-body li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 2px;
+  background-color: rgba(0,0,0,0.1);
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Interaction on list items */
+.card-body li:hover {
+  color: var(--blue-sio);
+}
+
+.option-slam .card-body li:hover {
+  color: var(--green-sio);
+}
+
+.card-body li:hover::before {
+  width: 25px;
+  background-color: currentColor;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+  .options-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .option-card {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.sisr, .slam {
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     
+    /* Harmonisation de l'écriture */
+    font-family: 'Segoe UI', Tahoma, sans-serif; /* Même police */
+    font-size: 0.95rem;                          /* Même taille */
+    line-height: 1.6;                            /* Même interligne */
+    color: #444;                                 /* Même couleur de texte */
+    text-align: justify;                         /* Texte bien aligné à gauche et à droite */
 }
-div.stageF3{
-    width: 45%;
-    font-size: 20px;
-    margin: auto;
+
+/* Mise en forme des listes de métiers */
+.sisr, .slam {
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Pour simuler une liste à puces sur les métiers sans changer ton HTML */
+.sisr br + text, .slam br + text {
+    display: list-item;
+    list-style-type: "▹ ";
+    margin-left: 20px;
+}
+
+/* --- Section Mon Parcours --- */
+.monParcour {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Petit liseré décoratif sur le côté */
+.monParcour::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: linear-gradient(to bottom, #3498db, #2ecc71);
+}
+
+.monParcour h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.parcour-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #5a6e7c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Mise en avant des mots clés (gras) */
+.parcour-content strong {
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .monParcour {
+        margin: 30px 20px;
+        padding: 25px;
+    }
+}
+
+.stageIntro {
+    max-width: 850px;
+    margin: 40px auto; /* Centre le bloc horizontalement */
+    padding: 20px;
+    background-color: #e8f4f8; /* Un bleu très léger pour la faire ressortir */
+    border-left: 5px solid #3498db; /* Un rappel de la couleur bleue de votre thème */
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #2c3e50;
+    text-align: center; /* Centre le texte à l'intérieur */
+}
+
+/* Conteneurs de texte */
+.texte, .texteOwasp, .texteHacker {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+/* Section Compétences (Alignement horizontal) */
+/* Style global pour les listes de logos (Outils + Compétences) */
+.outils ul, .competences ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligne le haut des icônes */
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Conteneur individuel pour chaque icône + texte */
+.outils ul div, .competences ul div {
+    display: flex;
+    flex-direction: column; /* Empile l'image et le texte */
+    align-items: center;    /* Centre horizontalement l'image et le texte */
+    width: 110px;           /* Largeur fixe pour un alignement propre */
+    text-align: center;
+    font-size: 0.95rem;
+    color: #34495e;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Style des images */
+.outils img, .competences img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 12px; /* Espace entre l'icône et son nom */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+    filter: grayscale(20%);
+}
+
+/* Animation au survol du bloc complet */
+.outils ul div:hover img, .competences ul div:hover img {
+    transform: scale(1.15);
+    filter: grayscale(0%);
+}
+
+.outils ul div:hover {
+    color: #3498db; /* Le texte change de couleur en même temps que l'image */
+}
+
+/* Responsive : On réduit un peu la taille sur mobile */
+@media (max-width: 480px) {
+    .outils ul, .competences ul {
+        gap: 20px;
+    }
+    .outils ul div, .competences ul div {
+        width: 80px;
+        font-size: 0.8rem;
+    }
+    .outils img, .competences img {
+        height: 45px;
+    }
+}
+
+/* Section Stages et Projets (Alignement horizontal) */
+.stages, .projets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stageF3, .stageCRBE, .projetGSB, .VoyageDesSaveurs, .proxmox {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 280px; /* Force l'alignement côte à côte si l'écran est large */
+    max-width: 350px;
+    min-height: 200px;
+    transition: box-shadow 0.3s ease;
+}
+
+.stageF3:hover, .stageCRBE:hover, .projetGSB:hover, .VoyageDesSaveurs:hover, .proxmox:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.logoFrance3 {
+    width: 100px;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Liens */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
     display: inline-block;
-    text-align: left;
+    margin-top: 10px;
 }
-div.stageF3 img{
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
 }
-div.stageCRBE{
-    width: 45%;
-    font-size: 20px;
-    margin: auto;
+
+/* Veille Technologique */
+/* Section Veille Technologique - Alignement horizontal */
+.veilleTechno {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+/* Conteneur pour les deux sujets de veille */
+.veilleTechno-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Pour qu'ils aient la même hauteur */
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.owasp, .hacker {
+    flex: 1;
+    min-width: 300px; /* Largeur minimum avant de passer l'un sous l'autre sur mobile */
+    max-width: 550px;
+    background: #fdfdfd;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Ajustement des titres à l'intérieur de la veille */
+.owasp h2, .hacker h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    min-height: 60px; /* Aligne les débuts de paragraphes si un titre est plus long */
+}
+
+.texteOwasp, .texteHacker {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+/* Style du Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px; /* On donne de l'espace interne */
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* On stylise le titre à l'intérieur du footer */
+footer h1 {
+    color: #ecf0f1;
+    border-bottom: 2px solid #3498db;
+    width: auto;
     display: inline-block;
-    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* On enlève les puces de la liste et on centre */
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts li {
+    margin-bottom: 10px;
+}
+
+/* Style spécifique pour les liens du footer */
+footer a {
+    color: #3498db;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1abc9c; /* Une couleur turquoise au survol pour le côté moderne */
+    text-decoration: none;
+}
+
+/* Responsive : Si l'écran est petit, on empile les éléments */
+@media (max-width: 768px) {
+    .stages, .projets {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stageF3, .stageCRBE, .projetGSB, .VoyageDesSaveurs, .proxmox {
+        width: 90%;
+    }
 }
