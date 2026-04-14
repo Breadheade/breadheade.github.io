@@ -1,0 +1,552 @@
+/* Réinitialise les marges, paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Définir une couleur de fond gris pour lebody*/
+body{
+    background-color:rgba(180, 180, 180, 0.842);
+}
+
+/*importer la police Alice*/
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+
+/*barre de navigation*/
+#navTitre{
+    font-family: 'Alice', serif;
+    margin-top: 11%;
+    text-align: center;
+    font-size: 1.5vw;
+    width: 70%;
+    color: white;
+    text-decoration: underline ;
+ }
+
+.nav{
+    z-index: 2;
+    border: 5px solid rgb(255, 255, 255);
+    width: 90%;
+    margin-left: 5%;
+    height: 5%;
+    position: sticky;
+    top: 1%;
+    background-image: url(../site\ wbe/images/nav/baniere.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-align: center; 
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+}
+
+nav ul div {
+    width: 30%;
+    list-style-type: none;
+    display: flex;
+    background-image: url(../site\ wbe/images/nav/cucui.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2.5%;
+    margin-left: 2%;
+}
+
+
+nav ul div img {
+    width: 25%;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnNav1,#btnNav2,#btnNav3,#btnNav4,#btnNav5 {
+    font-family: 'Alice', serif;
+    border: 3px solid white;
+    margin: 3%;
+    font-size: 1.2vw;
+    padding: 2%;
+    border-radius: 20px;
+    width: 7%;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#btnNav1{
+    background-image: url(../site\ wbe/images/nav/pizza.png);
+}
+
+#btnNav2{
+    background-image: url(../site\ wbe/images/nav/hot-dog.png);
+}
+
+#btnNav3{
+    background-image: url(../site\ wbe/images/nav/nachos.png);
+}
+
+#btnNav4{
+    background-image: url(../site\ wbe/images/nav/sushi.png);
+}
+
+#btnNav5{
+    background-image: url(../site\ wbe/images/nav/riz-libanais.png);
+}
+
+#btnNav1:hover,#btnNav2:hover,#btnNav3:hover,#btnNav4:hover,#btnNav5:hover{
+    background-color:rgb(190, 124, 0);
+}
+
+
+
+
+/*contenue*/
+
+#blog1gauche{
+    width: 30%;
+}
+
+#blog1droite{
+    width: 70%;
+}
+
+.conteneurIntroduction{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    background-image: url(../site\ wbe/images/Restauration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border : 5px solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+.conteneur{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    background-image: url("https://jooinn.com/images/wood-background-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border : 5px solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+#titre{
+    font-family: 'Alice', serif;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+#atelier1,#atelier3{
+    border-radius: 20px;
+    background-color: rgba(46, 46, 46, 0.233);
+    background : rgba(255, 255, 255, 0.432);
+    border-radius : 15px;
+    box-shadow : 0 4px 30px rgba(0, 0, 0, 0.1);
+    border : 1px solid rgba(255, 255, 255, 0.3);
+    margin : 20px;
+    padding: 2%;
+    width: 50%;
+    margin: 5%;
+}
+
+#atelier2{
+    border-radius: 20px;
+    background-color: rgba(46, 46, 46, 0.233);
+    background : rgba(255, 255, 255, 0.432);
+    background-position: center;
+    border-radius : 15px;
+    box-shadow : 0 4px 30px rgba(0, 0, 0, 0.1);
+    border : 1px solid rgba(255, 255, 255, 0.3);
+    margin : 20px;
+    width: 50%;
+    margin: 5%;
+    margin-left: 40%;
+}
+
+#apropos{
+    margin: 2%;
+    background-color: rgba(182, 182, 182, 0.921);
+    border: 3px white solid;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+#menu{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#atelier1:hover,#atelier3:hover{
+width: 52%;
+margin:4%;
+}
+
+#atelier2:hover{
+    width: 52%;
+    margin:5%;
+    margin-left: 39%;
+}
+
+#imgAtelier1{
+    width:50%;
+    border-radius: 20px;
+}
+
+#paragrapheAtelier1{
+    padding: 5%;
+    font-size: 1.5vw;
+}
+
+#align{
+    list-style-type: none;
+    display:flex;
+}
+
+
+
+/*texte*/
+.paragraphe{
+    font-family: 'Alice', serif;
+    font-size:20px;
+}
+
+#slogan1{
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 3vw;
+    margin-left: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(3deg);
+}
+
+#slogan2{
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 3vw;
+    margin-left: 15%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(0deg);
+}
+
+#slogan3{
+    font-family: 'Alice', serif;
+    color: white;
+    width: 100%;
+    font-size: 3vw;
+    margin-left: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(-2deg);
+}
+
+#slogan4{
+    font-family: 'Alice', serif;
+    color: white;
+    font-size: 3vw;
+    margin-left: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(4deg);
+}
+
+#reserver{
+    font-family: 'Alice', serif;
+    font-size: 4vw;
+    margin-left: 50%;
+    padding: 5%;
+    background-color: rgb(255, 234, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: solid 4px white;
+}
+
+#titreIntro{
+    font-family: 'Alice', serif;
+    margin-left: 30%;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 4vw;
+}
+
+a{
+    font-family: 'Alice', serif;
+    color: white;
+}
+
+.titre{
+    font-family: 'Alice', serif;
+    color:rgb(163, 102, 22)
+}
+
+#paragraphe{
+    font-family: 'Alice', serif;
+    color:white;
+}
+
+#mois{
+    font-family: 'Alice', serif;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+#titreAtelier2{
+    font-family: 'Alice', serif;
+    color: white;
+    text-decoration: underline;
+    margin: 10%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#texteAtelier2{
+    font-family: 'Alice', serif;
+    list-style-type: none;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+#texteAtelier2:hover{
+    font-family: 'Alice', serif;
+    border-top: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+#prestationproposer{
+    font-family: 'Alice', serif;
+    color: white;
+    padding: 5%;
+}
+
+
+
+/*image*/
+#imgpresentation{
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 50%;
+}
+#image1intro{
+    margin-left: 10%;
+    height: 10%;
+    width: 10%;
+    transform: rotate(30deg);
+}
+#image2intro{
+    margin-left: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+#imgBlog1{
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+#imgBlog2{
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+#lieu{
+    border: solid white 3px;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+/*block*/
+#blog1,#blog3{
+    border: solid white 3px;
+    background-color: rgb(190, 190, 190);
+    margin: 2%;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+#blog2{
+    border: solid white 3px;
+    background-color: rgb(190, 190, 190);
+    margin: 2%;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 10%;
+}
+
+
+/*tableau*/
+table{
+    margin-left: 10%;
+    width: 80%;
+}
+thead{
+    background-color: gray;
+}
+td{
+    text-align: center;
+    background-color: white;
+}
+
+/*bouton*/
+
+#bouton-style1{
+    font-family: 'Alice', serif;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #525252;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#bouton-style2{
+    font-family: 'Alice', serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #525252;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+/* Style pour le Footer */
+.footer {
+    list-style-type: none;
+    display:flex;
+    margin-top: 2%;
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#reseau {
+    border : 5px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5%;
+    width: 20%;
+    padding: 1%;
+
+}
+
+#reseau img {
+    width: 50%;
+}
+
+#contact{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+#footer-droit{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
+
+
+/* Styles pour la section contact */
+#formulaire {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#formulaire h2 {
+    text-align: center;
+    color: rgb(136, 134, 134);
+    margin-bottom: 1rem;
+}
+
+#formulaire p {
+    text-align: center;
+    color: rgb(80, 80, 80);
+    margin-bottom: 2rem;
+}
+
+#formulaireForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#formulaireForm label {
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+#formulaireorm input, #formulaireForm textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formulaireForm button {
+    background-color: rgb(255, 87, 34);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#formulaireForm button:hover {
+    background-color: rgb(136, 134, 134);
+    transform: scale(1.05);
+}
+
+#formulaireInfo {
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+#formulaireInfo p {
+    margin: 0.5rem 0;
+}
+
+#formulaire strong {
+    color: rgb(136, 134, 134);
+}

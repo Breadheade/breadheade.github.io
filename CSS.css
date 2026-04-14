@@ -1,9 +1,8 @@
-p.titre{
+div.titre{
     width:100%;
     height: auto;
     text-align: center;
     font-size:100px;
-    background-image: url("image/baguette.png");
     background-repeat: no-repeat;
     background-size: 100% 210px;    
 }
@@ -12,7 +11,7 @@ footer{
     height: 300px;
     background-position: right;
 }
-p.texte{  
+div.texte{  
     font-size:20px;
     width:400px;
         margin: auto;
@@ -20,4 +19,36 @@ p.texte{
 h1{
     text-align: center;
     font-size: 50px;
+}
+div.competences img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+div.stages{
+    display: flex;
+    justify-content: space-between; /* espace entre les deux blocs */
+    align-items: flex-start; /* aligne en haut */
+    width: 1000px;
+    margin: auto;
+    
+}
+div.stageF3{
+    width: 45%;
+    font-size: 20px;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+}
+div.stageF3 img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+div.stageCRBE{
+    width: 45%;
+    font-size: 20px;
+    margin: auto;
+    display: inline-block;
+    text-align: right;
 }
