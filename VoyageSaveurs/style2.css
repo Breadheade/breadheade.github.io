@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(205, 75, 75, 0.842);
+}
+
+
+/*barre de navigation*/
+
+#navTitre{
+    text-align: center;
+    font-size: 2vw;
+ }
+.nav{
+    width: 10%;                    /* La largeur de la barre de navigation (20% de la largeur de la fenêtre) */
+    height: 100vh;                  /* Hauteur de la fenêtre (100% de la hauteur de la fenêtre) */
+    position: sticky;               /* Fait en sorte que l'élément soit sticky */
+    top: 0;                         /* L'élément devient sticky en haut de la page */
+    left: 0;                        /* Positionné à gauche de la page */
+    background-color: rgba(248, 155, 78, 0.973); /* Couleur de fond avec transparence */
+    border-radius: 20px;            /* Coins arrondis pour l'élément */
+    padding: 10px;                  /* Ajout d'un peu de padding à l'intérieur */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet d'élévation */
+    z-index: 10;       
+}
+
+nav ul img{
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    width:90%;
+    margin:1%
+}
+
+nav ul li{
+    background-color: gray;
+    margin-top: 5%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3%;
+}
+
+/*contenue*/
+
+#blog1gauche{
+    width: 30%;
+}
+
+#blog1droite{
+    width: 70%;
+}
+
+.conteneurIntroduction{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: -40%;
+    background-image: url(../site\ wbe/images/Restauration.jpg);
+    background-size: cover; /* Permet de couvrir toute la div */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans la div */
+    border-radius: 20px;
+    border : 5px solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+.conteneur{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 1%;
+    background-image: url("https://jooinn.com/images/wood-background-1.jpg");
+    background-size: cover; /* Permet de couvrir toute la div */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans la div */
+    border-radius: 20px;
+    border : 5px solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+#titre{
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+#atelier1,#atelier3{
+    border-radius: 20px;
+    background-color: rgba(46, 46, 46, 0.233);
+    background : rgba(255, 255, 255, 0.432);
+    border-radius : 15px;
+    box-shadow : 0 4px 30px rgba(0, 0, 0, 0.1);
+    border : 1px solid rgba(255, 255, 255, 0.3);
+    margin : 20px;
+    padding: 2%;
+    width: 50%;
+    margin: 5%;
+}
+
+#atelier2{
+    border-radius: 20px;
+    background-color: rgba(46, 46, 46, 0.233);
+    background : rgba(255, 255, 255, 0.432);
+    background-position: center;
+    border-radius : 15px;
+    box-shadow : 0 4px 30px rgba(0, 0, 0, 0.1);
+    border : 1px solid rgba(255, 255, 255, 0.3);
+    margin : 20px;
+    width: 50%;
+    margin: 5%;
+    margin-left: 40%;
+}
+
+#apropos{
+    margin: 2%;
+    background-color: rgba(182, 182, 182, 0.921);
+    border: 3px white solid;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+#menu{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#atelier1:hover,#atelier3:hover{
+width: 52%;
+margin:4%;
+}
+
+#atelier2:hover{
+    width: 52%;
+    margin:5%;
+    margin-left: 39%;
+}
+
+#imgAtelier1{
+    width:50%;
+    border-radius: 20px;
+}
+
+#paragrapheAtelier1{
+    padding: 5%;
+    font-size: 1.5vw;
+}
+
+#align{
+    list-style-type: none;
+    display:flex;
+}
+
+
+
+/*texte*/
+
+.paragraphe{
+    font-size:20px;
+}
+
+#slogan1{
+    color: white;
+    font-size: 3vw;
+    margin-left: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(3deg);
+}
+
+#slogan2{
+    color: white;
+    font-size: 3vw;
+    margin-left: 15%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(0deg);
+}
+
+#slogan3{
+    color: white;
+    width: 100%;
+    font-size: 3vw;
+    margin-left: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(-2deg);
+}
+
+#slogan4{
+    color: white;
+    font-size: 3vw;
+    margin-left: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: rotate(4deg);
+}
+
+#reserver{
+    font-size: 4vw;
+    margin-left: 50%;
+    padding: 5%;
+    background-color: rgb(255, 234, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: solid 4px white;
+}
+
+#titreIntro{
+    margin-left: 30%;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 4vw;
+}
+
+a{
+    color: white;
+}
+
+.titre{
+    color:rgb(163, 102, 22)
+}
+
+#paragraphe{
+    color:white;
+}
+
+#mois{
+    font-size: 1.5vw;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+#titreAtelier2{
+    color: white;
+    text-decoration: underline;
+    margin: 10%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#texteAtelier2{
+    list-style-type: none;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+#texteAtelier2:hover{
+    border-top: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+#prestationproposer{
+    color: white;
+    padding: 5%;
+}
+
+#formulaire h2 {
+    text-align: center;
+    color: rgb(136, 134, 134);
+    margin-bottom: 1rem;
+}
+
+#formulaire p {
+    text-align: center;
+    color: rgb(80, 80, 80);
+    margin-bottom: 2rem;
+}
+
+#formulaireForm label {
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+#formulaireorm input, #formulaireForm textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formulaireInfo p {
+    margin: 0.5rem 0;
+}
+
+#formulaire strong {
+    color: rgb(136, 134, 134);
+}
+
+#formulaireInfo {
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+
+
+/*image*/
+#imgpresentation{
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 50%;
+}
+#image1intro{
+    margin-left: 10%;
+    height: 10%;
+    width: 10%;
+    transform: rotate(30deg);
+}
+#image2intro{
+    margin-left: 100%;
+    background-color: white; /* Ajoute un arrière-plan blanc */
+    padding: 10px; /* Ajoute un espace autour de l'image */
+    border-radius: 50px; /* Optionnel : ajoute des coins arrondis */
+    width: 100%;
+}
+
+#imgBlog1{
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+#imgBlog2{
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+#lieu{
+    border: solid white 3px;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+/*block*/
+#blog1,#blog3{
+    border: solid white 3px;
+    background-color: rgb(190, 190, 190);
+    margin: 2%;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+#blog2{
+    border: solid white 3px;
+    background-color: rgb(190, 190, 190);
+    margin: 2%;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 10%;
+}
+
+#formulaire {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+#formulaireForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/*tableau*/
+table{
+    margin-left: 10%;
+    width: 80%;
+}
+thead{
+    background-color: gray;
+}
+td{
+    text-align: center;
+    background-color: white;
+}
+
+/*bouton*/
+
+#bouton-style1{
+    font-family: 'Alice', serif;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #525252;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#bouton-style2{
+    font-family: 'Alice', serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #525252;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+#formulaireForm button {
+    background-color: rgb(255, 87, 34);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#formulaireForm button:hover {
+    background-color: rgb(136, 134, 134);
+    transform: scale(1.05);
+}
+
+/* Style pour le Footer */
+.footer {
+    list-style-type: none;
+    display:flex;
+    margin-top: 2%;
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#reseau {
+    border : 5px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5%;
+    width: 20%;
+    padding: 1%;
+
+}
+
+#reseau img {
+    width: 50%;
+}
+
+#contact{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+#footer-droit{
+    margin-left: 5%;
+    margin-top: 2%;
+}
